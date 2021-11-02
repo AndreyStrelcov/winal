@@ -14,17 +14,20 @@
 .top-bar__list {
 	display: flex;
 }
-.top-bar__item + .top-bar__item {
+.top-bar__phone2 {
 	padding-left: 30px;
 }
 .top-bar__link {
-	color: $text-links;                  
+	color: $blue;                  
 }
 .time-works_blue {
-	color: $text-links;
+	color: $blue;
 }
-@media (max-width: 767px) {
+@media (max-width: 860px) {
 	.time-works {
+		display: none;
+	}
+	.top-bar__phone2 {
 		display: none;
 	}
 }
@@ -45,10 +48,28 @@
 	display: flex;
 	position: relative;
 }
-@media (max-width: 767px) {
+.main-menu__link {
+	color: $text-middle;
+	font-size: 16px;
+	font-weight: 500;
+}
+.menu-button {
+	background-color: $red;
+	padding: 11px 30px;
+	border-radius: 5px;
+}
+.menu-button__link {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+}
+@media (max-width: 900px) {
 	body.lock {
         overflow: hidden;
 	}	
+	.main-menu__wrap {
+		min-height: 60px;
+	}
 	.header-burger {
 		display: block;
 		cursor: pointer;
@@ -96,10 +117,10 @@
 	.main-menu-list {
 		position: fixed;
 		left: -100%;
-		top: 98px;
+		top: 88px;
 		display: block;
 		height: 100%;
-		width: 80%;
+		width: 70%;
 		background-color: $blue;
 		overflow: auto;
         transition: all 0.3s ease 0s;
@@ -116,10 +137,10 @@
 		font-size: 18px;
 	}
 	.main-menu-list.active {
-        top: 98px;
+        top: 88px;
 		left: 0;
     }
-	.main-menu__button {
+	.menu-button {
 		display: none;
 	}
 }
