@@ -11,8 +11,12 @@
 	justify-content: space-between;
 	align-items: center;
 }
+.top-bar__city {
+	flex-grow: 1;
+}
 .top-bar__list {
 	display: flex;
+	flex-grow: 4;
 }
 .top-bar__phone2 {
 	padding-left: 30px;
@@ -20,10 +24,16 @@
 .top-bar__link {
 	color: $blue;                  
 }
+.time-works {
+	flex-grow: 0;
+}
 .time-works_blue {
 	color: $blue;
 }
 @media (max-width: 860px) {
+	.top-bar__list {
+		flex-grow: 0;
+	}
 	.time-works {
 		display: none;
 	}
@@ -54,9 +64,16 @@
 	font-weight: 500;
 }
 .menu-button {
+	// display: inline-block;
 	background-color: $red;
-	padding: 11px 30px;
-	border-radius: 5px;
+	padding: 0px 30px;
+	height: 40px;
+}
+.menu-button::before {
+	content: "";
+	vertical-align: middle;
+	display: inline-block;
+	height: 100%;
 }
 .menu-button__link {
 	color: #fff;
