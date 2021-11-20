@@ -1,0 +1,15 @@
+.windows {
+    margin-top: 190px;
+}
+.win-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 860px) {
+    .windows {
+        margin-top: 0;
+    }
+    .win-wrap {
+        display: block;
+    }
+}    
