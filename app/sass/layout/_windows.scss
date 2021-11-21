@@ -5,6 +5,11 @@
     display: flex;
     justify-content: space-between;
 }
+.hero-win {
+    height: 450px;
+    background: url("/images/dest/win-banner.jpg") no-repeat 50%;
+    background-size: cover;
+}
 @media (max-width: 860px) {
     .windows {
         margin-top: 0;
