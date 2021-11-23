@@ -1,0 +1,16 @@
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 15px;
+}
+.main-page {
+	position: relative;
+	display: grid;
+	row-gap: 80px;
+	grid-template-areas: 'hero' 'features' 'windows' 'doors';
+}
+@media (max-width: 860px) {
+	.main-page {
+		row-gap: 20px;
+	}
+}	
